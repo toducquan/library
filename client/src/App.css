@@ -1,0 +1,9 @@
+.header{
+  padding-top: 30px;
+  width: 400px;
+  margin: auto;
+  display: flex;
+}
+.header .ant-btn{
+  margin-left: 30px;
+}
