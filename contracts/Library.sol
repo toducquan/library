@@ -18,7 +18,7 @@ contract Library is Ownable {
 
     mapping(uint256 => address) internal ledge;
 
-    constructor(string memory _name) {
+    constructor(string memory _name) public {
         name = _name;
         bookStore.push(
             Book({isbn: "25092000", title: "league of legends", author: "riot"})
