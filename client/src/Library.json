@@ -1,7 +1,4 @@
-import { ethers } from "ethers";
-
-const address = "0xfB00Ca7946343FcE854f0fcc54b3a67FC8c4da28"
-const abi = [
+[
     {
         "inputs": [
             {
@@ -310,13 +307,3 @@ const abi = [
         "type": "function"
     }
 ]
-
-const provider = new ethers.providers.Web3Provider(window.ethereum);
-const signer = provider.getSigner();
-const contract = new ethers.Contract(
-    address,
-    abi,
-    signer,
-);
-
-export default contract;
